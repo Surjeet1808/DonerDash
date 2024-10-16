@@ -40,7 +40,7 @@ function Home(){
                     
 
                      <Routes>
-                       
+                       <Route path='/' element={<Dashboard/>} />  
                        <Route path='/General/transactions' element={<Transactions/>} />
                        <Route path='/General/dashboard' element={<Dashboard/>} />
                        <Route path={"*"} element={<Status/>} />

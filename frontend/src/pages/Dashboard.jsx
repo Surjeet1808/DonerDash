@@ -1,8 +1,14 @@
-import React from 'react'
+import React,{useState} from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {faStar,faCopy} from '@fortawesome/free-regular-svg-icons'
 import {faArrowUpFromBracket} from '@fortawesome/free-solid-svg-icons'
 function Dashboard(){
+        const [message,setMessage]=useState('');
+        const Link="<Generated Link>";
+        const copyLink= async()=>{
+                await navigator.clipboard.writeText(Link);
+                setMessage("Copied to clipboard");
+        }
   return (
     <>
         <div className='p-8 pt-0'>
@@ -31,8 +37,9 @@ function Dashboard(){
                                    </div>
                                    <div className='flex gap-4'>
                                        <button className='py-1 px-2 rounded text-sm text-white bg-gradient-to-r from-[#e24636] to-[#5d5196] font-semibold'><FontAwesomeIcon icon={faStar} /> Rewards</button>
-                                       <button className='py-1 px-2 rounded text-sm text-white bg-gradient-to-r from-[#e24636] to-[#5d5196] font-semibold'><FontAwesomeIcon icon={faCopy} /> Copy Donetion Link</button>
+                                       <button className='py-1 px-2 rounded text-sm text-white bg-gradient-to-r from-[#e24636] to-[#5d5196] font-semibold' onClick={copyLink}><FontAwesomeIcon icon={faCopy} /> Copy Donetion Link</button>
                                    </div>
+                                   <p>{message}</p>
                                    <p>unlock ninja level at 5000</p>
                                    <p className='text-[#ea4633] font-semibold'>Time Left : <span className='text-zinc-900'>Campaign Expired</span></p>
                                    <button className='py-1 px-2 border-black rounded text-sm text-white bg-[#ea4633] font-semibold'>Extend Now</button>
