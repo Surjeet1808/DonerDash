@@ -9,6 +9,7 @@ import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {faHouse} from '@fortawesome/free-solid-svg-icons'
 import { useLocation } from 'react-router-dom';
 import Status from '../component/Status.jsx';
+import Listing from './Listing.jsx';
 function Home(){
     
     const location = useLocation();
@@ -38,9 +39,8 @@ function Home(){
 
                     
                     
-
                      <Routes>
-                       <Route path='/' element={<Dashboard/>} />  
+                       <Route path='/' element={<Listing/>} />  
                        <Route path='/General/transactions' element={<Transactions/>} />
                        <Route path='/General/dashboard' element={<Dashboard/>} />
                        <Route path={"*"} element={<Status/>} />

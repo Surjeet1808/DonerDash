@@ -4,7 +4,7 @@
   
   function Navbar() {
     return (
-        <div className="sticky top-0 h-[5rem] bg-white p-4 flex justify-end">
+        <div className="sticky top-0 h-[5rem] bg-white p-4 flex justify-end z-[50]">
              <div className='flex items-center gap-2'>
                   <div>
                        <img className='w-[2rem] h-[2rem] rounded-full' src={image} alt="" />

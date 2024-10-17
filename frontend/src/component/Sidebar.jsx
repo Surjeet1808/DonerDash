@@ -17,9 +17,11 @@ function Sidebar(){
                             </div>
                        </div>
                        <div className='w-[100%] pr-10'>
-                       <div className="w-[100%] p-5 py-3 bg-[#fef4f3] rounded-lg">
+                        <div className="w-[100%] p-5 py-3 bg-[#fef4f3] rounded-lg">
+                       <NavLink to="/">
                            <p className="text-[#ea4633]  font-semibold">General</p>
                            <p className="text-xs font-semibold">Dashboard</p>
+                       </NavLink>
                        </div>
                        </div>
                        <div className="w-[100%] p-2">
@@ -37,7 +39,7 @@ function Sidebar(){
                                     </NavLink>
                                  </li>
                                  <li className='flex gap-2 items-center font-semibold'>
-                                 <NavLink className={({isActive})=>`w-[85%] flex gap-2 items-center font-semibold p-2 rounded-lg ${isActive?"bg-[#ea4633] text-white":""}`} to="/General/start">
+                                 <NavLink className={({isActive})=>`w-[85%] flex gap-2 items-center font-semibold p-2 rounded-lg ${isActive?"bg-[#ea4633] text-white":""}`} to="/">
                                         <FontAwesomeIcon icon={faArrowTurnDown} />
                                         <p>Start Here</p>
                                    </NavLink>
