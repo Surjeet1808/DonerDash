@@ -11,7 +11,7 @@
                   </div>
                   <div>
                       <p className="font-semibold">Surjeet Dhakad</p>
-                      <p className="text-sm text-semibold text-zinc-500">Funder <FontAwesomeIcon icon={faAngleDown} /></p>
+                      <p className="text-sm text-semibold text-zinc-500">fundraiser <FontAwesomeIcon icon={faAngleDown} /></p>
                 </div>
              </div>
         </div>

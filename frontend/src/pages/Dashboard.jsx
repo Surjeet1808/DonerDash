@@ -56,7 +56,7 @@ function Dashboard(){
                                    <button className='py-1 px-2 border-black rounded text-sm text-white bg-[#ea4633] font-semibold'>Extend Now</button>
                                    <div className='w-[90%] bg-[#ea4633] h-[5px] rounded-lg'></div>
                                    <p className='text-[#ea4633] font-semibold'>Refrence Code : <span className='text-zinc-900'>pra7432</span></p>
-                                   <button className='py-1 px-2 rounded text-sm text-white bg-gradient-to-r from-[#e24636] to-[#5d5196] font-semibold'><NavLink to="/">Start Here</NavLink></button>
+                                   <button className='py-1 px-2 rounded text-sm text-white bg-gradient-to-r from-[#e24636] to-[#5d5196] font-semibold'><NavLink to="/start">Start Here</NavLink></button>
                             </div>
                        </div> 
                        <div className='border-t-2 border-zinc-300 bg-white rounded-b-lg p-4 px-10 py-3'>
